@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  background-color: #ffc55a; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background: white;
+  color: #000000;
+  padding: 1rem;
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ffa500;
+  color: white;
+}
+
+.perfil-link:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.logo img {
+  width: 60px;
+  max-width: 150px;
+  height: auto;
+}
+
+/* Sección de Recomendaciones */
+.recomendaciones {
+  text-align: center;
+  padding: 2rem;
+  font-size: 20px;
+}.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}.tarjeta {
+  background-color: #ffe8cd;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+}.tarjeta ul {
+  list-style: none; 
+  padding-left: 0;   
+  margin: 0 ;   
+}.tarjeta img {
+  width: 35%; 
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}

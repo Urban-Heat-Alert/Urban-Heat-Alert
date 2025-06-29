@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas - Urban Heat Alert</title>
+    <link rel="icon" href="/assets/images/UrbanHeatAlert_Logo.png" type="image/png">
+    <link rel="stylesheet" href="/assets/styles/alertas.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="/assets/images/UrbanHeatAlert_Logo.png" alt="Urban Heat Alert" class="logo" />
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Inicio</a></li>
+                <li><a href="alertas.html" class="active">Alertas</a></li>
+                <li><a href="recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="alertas-section">
+        <div class="alertas-en-tiempo-real">
+            <h2>ALERTAS EN TIEMPO REAL</h2>
+            <div class="alerta-actual">
+                <div class="alerta-info">
+                    <h3>Alerta activa</h3>
+                    <p>Temperaturas extremas en Lima</p>
+                    <p>Temperatura: 38°C</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-agregar">+</button>
+
+        <div class="historial-alertas">
+            <h2>HISTORIAL DE ALERTAS</h2>
+            <div class="alerta-historica">
+                <h3>Alerta histórica</h3>
+                <p>Temperaturas extremas en Carabayllo</p>
+                <p>Temperatura: 35°C</p>
+            </div>
+        </div>
+
+        <div class="agregar-alerta">
+            <h2>AGREGAR ALERTA</h2>
+            <form id="agregar-alerta-form">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required />
+
+                <label for="temperatura">Temperatura:</label>
+                <input type="number" id="temperatura" name="temperatura" required />
+
+                <button type="submit" class="btn-submit">Agregar alerta</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Urban Heat Alert</p>
+    </footer>
+
+    <script src="alertas.js"></script>
+</body>
+</html>
