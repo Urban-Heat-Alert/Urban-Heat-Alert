@@ -3,47 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Editar Perfil</title>
+  <title>Perfil del Usuario</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/styles/perfil.css">
+  <link rel="stylesheet" href="assets/styles/perfil.css">
 </head>
 <body>
-    <!-- Botón Volver -->
-    <button class="btn-volver" onclick="volverAInicio()">← Volver</button>
+  <button class="btn-volver" onclick="window.location.href='menu.html'">← Volver</button>
+  <button class="btn-cambiar" onclick="window.location.href='cambiar_perfil.html'">Editar perfil →</button>
+  
 
-    <div class="seccion-principal">
-        <header class="header">
-            <h1 class="titulo">EDITAR PERFIL</h1>
-        </header>
+  <div class="seccion-principal">
+    <header class="header">
+      <h1 class="titulo">PERFIL DEL USUARIO</h1>
+    </header>
 
-        <div class="rectangulo">
-            <!-- Imagen perfil -->
-            <div class="imagen-perfil">
-                <img src="/assets/images/profile.png" alt="Imagen perfil">
-            </div> 
+    <div class="rectangulo">
 
-            <!-- Formulario -->
-            <form class="formulario">
-                <label>Nombre completo:</label>
-                <input type="text" placeholder="Ingresa tu nombre">
+      <!-- Imagen perfil -->
+      <div class="imagen-perfil">
+        <img src="assets/images/profile.png" alt="Imagen perfil">
+      </div>
 
-                <label>Edad:</label>
-                <input type="number" placeholder="Ingresa tu edad">
+      <!-- Datos del perfil -->
+      <div class="datos-perfil">
+  <p><strong>Nombre de Usuario: <span id="Unombre"></span> </p>
+  <p><strong>Edad: <span id="edad"> </span> </p>
+  <p><strong>Correo: <span id="Uemail"> </span></p>
+  <p><strong>Telefono: <span id="Utelefono"> </span> </p>
+  <p><strong>Ubicación: <span id="ubicacion"> </span> </p>
+  <p><strong>Notificaciones activadas: </p>
 
-                <label>Ubicación:</label>
-                <input type="text" placeholder="Ingresa tu ubicación">
 
-                <label>Correo:</label>
-                <input type="email" placeholder="Ingresa tu correo">
+</div>
 
-                <label>Contraseña:</label>
-                <input type="password" placeholder="Ingresa tu contraseña">
 
-                <button type="submit">Guardar</button>
-            </form>
-        </div>
     </div>
+  </div>
 
-    <script src="/assets/scripts/editarperfil.js"></script>
+  <script src="assets/scripts/perfil.js"></script>
+
 </body>
 </html>
+
